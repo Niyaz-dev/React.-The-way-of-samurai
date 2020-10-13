@@ -13,26 +13,7 @@
   /* grid-gap: 10px; */
 }
 
-.header{
-  grid-area: h;
-  background-color: green;
-}
 
-.header img {
-  width: 20px;
-  /* min-width: 100%; */
-}
 
-.nav{
-  grid-area: n;
-  background-color: beige;
-}
 
-.content{
-  grid-area: c;
-  background-color: rgba(46, 29, 196, 0.151);
-}
 
-.content img {
-  max-width: 100%;
-}
