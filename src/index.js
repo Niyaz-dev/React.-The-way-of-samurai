@@ -15,3 +15,14 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+// const dialogsData = [
+//     {id:1, name: "Dimych"},
+//     {id:2, name: "Andrey"},
+//     {id:3, name: "Sveta" },
+//     {id:4, name: "Sasha" },
+//     {id:5, name: "Viktor"},
+//     {id:6, name: "Valera"},
+// ];
+
+// export {dialogsData}

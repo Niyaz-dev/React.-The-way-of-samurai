@@ -21,7 +21,10 @@ const App = () => {
                     <Route path="/profile" component={Profile} />
                     <Route path="/dialogs" component={Dialogs} />
                     <Route path="/news" component={News} />
-                    <Route path="/settings" component={Settings} />
+                    {/* <Route path="/settings" component={Settings} /> */}
+                    <Route path="/music" component={Music} />
+
+                    <Route path="/settings" render={() => <Settings/>} />
                     <Route path="/music" component={Music} />
                 </div>
             </div>
