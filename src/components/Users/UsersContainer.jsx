@@ -13,6 +13,7 @@ import preloader from "../../assets/images/preloader.svg"
 import Preloader from "../common/preloader/Preloader";
 import {usersAPI} from "../../api/api";
 import {withAuthRedirect} from "../../hoc/WithAuthRedirect";
+import {compose} from "redux";
 
 class UsersContainer extends React.Component {
 
@@ -54,15 +55,16 @@ let mapStateToProps = (state) => {
     }
 }
 
-
-export default withAuthRedirect(connect(mapStateToProps,
-    {
-        followSuccess,
-        unfollowSuccess,
-        setCurrentPage,
-        toggleFollowingProgress,
-        getUsers,
-        follow,
-        unfollow,
-    }
-)(UsersContainer));
+export default compose(
+    withAuthRedirect,
+    connect(mapStateToProps,
+        {
+            followSuccess,
+            unfollowSuccess,
+            setCurrentPage,
+            toggleFollowingProgress,
+            getUsers,
+            follow,
+            unfollow,
+        }
+))(UsersContainer);
