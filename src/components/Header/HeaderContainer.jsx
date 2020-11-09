@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 import Header from "./Header";
 import * as axios from "axios";
 import {connect} from "react-redux";
-import {getAuthUserData} from "../../redux/auth-reducer";
+import {getAuthUserData, logout} from "../../redux/auth-reducer";
 import {authAPI} from "../../api/api";
 
 class HeaderContainer extends React.Component{
@@ -26,4 +26,4 @@ const mapStateTpProps = (state) => ({
 });
 
 
-export default connect(mapStateTpProps, {getAuthUserData})(HeaderContainer);
+export default connect(mapStateTpProps, {getAuthUserData,logout})(HeaderContainer);
