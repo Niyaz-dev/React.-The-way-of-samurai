@@ -2,7 +2,7 @@ import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css'
 import ProfileInfo from './ProfileInfo/ProfileInfo';
-import MyPostsContainer from "./MyPosts/MyPosts-container";
+import MyPostsContainer from "./MyPosts/MyPostsContainer";
 import Profile from "./Profile";
 import * as axios from "axios";
 import {connect} from "react-redux";
