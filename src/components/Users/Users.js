@@ -6,8 +6,9 @@ import {NavLink} from "react-router-dom";
 import * as axios from "axios";
 import {toggleFollowingProgress} from "../../redux/users-reducer";
 import {usersAPI} from "../../api/api";
+import Paginator from "../common/Paginator/Paginator";
 
-let Users = (props) => {
+let Users = ({currentPage, onPageChanged,totalUsersCount,pageSize, ...props}) => {
 
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
 
@@ -16,13 +17,7 @@ let Users = (props) => {
         pages.push(i);
     }
     return <div>
-        <div>
-            {pages.map(p => {
-                return <span className={(props.currentPage === p) && styles.selectedPage} onClick={(e) => {
-                    props.onPageChanged(p)
-                }}>{p}</span>
-            })}
-        </div>
+        <Paginator currentPage={currentPage} onPageChanged={onPageChanged} totalUsersCount={totalUsersCount} pageSize={pageSize}/>
         {
             props.users.map(u =>
                 <div key={u.id}>
