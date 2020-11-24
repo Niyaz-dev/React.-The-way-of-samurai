@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/React.-The-way-of-samurai/static/css/main.c4fb6737.chunk.css",
-    "main.js": "/React.-The-way-of-samurai/static/js/main.bc05782f.chunk.js",
-    "main.js.map": "/React.-The-way-of-samurai/static/js/main.bc05782f.chunk.js.map",
-    "runtime-main.js": "/React.-The-way-of-samurai/static/js/runtime-main.cbda58e2.js",
-    "runtime-main.js.map": "/React.-The-way-of-samurai/static/js/runtime-main.cbda58e2.js.map",
-    "static/js/2.233e51d0.chunk.js": "/React.-The-way-of-samurai/static/js/2.233e51d0.chunk.js",
-    "static/js/2.233e51d0.chunk.js.map": "/React.-The-way-of-samurai/static/js/2.233e51d0.chunk.js.map",
+    "main.js": "/React.-The-way-of-samurai/static/js/main.11ab80c1.chunk.js",
+    "main.js.map": "/React.-The-way-of-samurai/static/js/main.11ab80c1.chunk.js.map",
+    "runtime-main.js": "/React.-The-way-of-samurai/static/js/runtime-main.efdcb0f7.js",
+    "runtime-main.js.map": "/React.-The-way-of-samurai/static/js/runtime-main.efdcb0f7.js.map",
+    "static/js/2.738ace28.chunk.js": "/React.-The-way-of-samurai/static/js/2.738ace28.chunk.js",
+    "static/js/2.738ace28.chunk.js.map": "/React.-The-way-of-samurai/static/js/2.738ace28.chunk.js.map",
     "static/css/3.dc13780c.chunk.css": "/React.-The-way-of-samurai/static/css/3.dc13780c.chunk.css",
     "static/js/3.5d65e4c8.chunk.js": "/React.-The-way-of-samurai/static/js/3.5d65e4c8.chunk.js",
     "static/js/3.5d65e4c8.chunk.js.map": "/React.-The-way-of-samurai/static/js/3.5d65e4c8.chunk.js.map",
     "static/css/4.a8e9c588.chunk.css": "/React.-The-way-of-samurai/static/css/4.a8e9c588.chunk.css",
-    "static/js/4.c5fe1354.chunk.js": "/React.-The-way-of-samurai/static/js/4.c5fe1354.chunk.js",
-    "static/js/4.c5fe1354.chunk.js.map": "/React.-The-way-of-samurai/static/js/4.c5fe1354.chunk.js.map",
+    "static/js/4.211bc2cb.chunk.js": "/React.-The-way-of-samurai/static/js/4.211bc2cb.chunk.js",
+    "static/js/4.211bc2cb.chunk.js.map": "/React.-The-way-of-samurai/static/js/4.211bc2cb.chunk.js.map",
     "index.html": "/React.-The-way-of-samurai/index.html",
     "static/css/3.dc13780c.chunk.css.map": "/React.-The-way-of-samurai/static/css/3.dc13780c.chunk.css.map",
     "static/css/4.a8e9c588.chunk.css.map": "/React.-The-way-of-samurai/static/css/4.a8e9c588.chunk.css.map",
     "static/css/main.c4fb6737.chunk.css.map": "/React.-The-way-of-samurai/static/css/main.c4fb6737.chunk.css.map",
-    "static/js/2.233e51d0.chunk.js.LICENSE.txt": "/React.-The-way-of-samurai/static/js/2.233e51d0.chunk.js.LICENSE.txt",
+    "static/js/2.738ace28.chunk.js.LICENSE.txt": "/React.-The-way-of-samurai/static/js/2.738ace28.chunk.js.LICENSE.txt",
     "static/media/preloader.svg": "/React.-The-way-of-samurai/static/media/preloader.7aee2325.svg",
     "static/media/user.4bcd9e2b.jpg": "/React.-The-way-of-samurai/static/media/user.4bcd9e2b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cbda58e2.js",
-    "static/js/2.233e51d0.chunk.js",
+    "static/js/runtime-main.efdcb0f7.js",
+    "static/js/2.738ace28.chunk.js",
     "static/css/main.c4fb6737.chunk.css",
-    "static/js/main.bc05782f.chunk.js"
+    "static/js/main.11ab80c1.chunk.js"
   ]
 }
