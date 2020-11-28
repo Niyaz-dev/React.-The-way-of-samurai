@@ -2,6 +2,14 @@
     padding: 10px;
 }
 
-/* .content img {
-    max-width: 100%;
-} */
+.mainAvatar {
+    max-width: 200px;
+}
+
+.mainPhoto {
+    max-width: 900px;
+}
+
+.contact {
+    padding-left: 10px;
+}
