@@ -5,7 +5,6 @@ import userPhoto from "../../../../assets/images/user.png";
 
 const Post = (props) => {
     const imgSrc = (props) => {
-        debugger
         if((props.profile) && (props.profile.photos) && (props.profile.photos.large)) {
             return props.profile.photos.large;
         }
