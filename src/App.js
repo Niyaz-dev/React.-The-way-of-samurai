@@ -38,7 +38,7 @@ class App extends React.Component {
                             <Route exact path="/" render={() => <Redirect to={'/profile'}/>}/>
                             <Route path="/profile/:userId?" render={withSuspense(ProfileContainer)}/>
                             <Route path="/dialogs" render={withSuspense(DialogsContainer)}/>
-                            <Route path="/users" render={() => <UsersContainer/>}/>
+                            <Route path="/users" render={() => <UsersContainer pageTitle={"Самураи"}/>}/>
                             <Route path="/news" component={News}/>
                             <Route path="/settings" component={Settings}/>
                             <Route path="/music" component={Music}/>
