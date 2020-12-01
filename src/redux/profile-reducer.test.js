@@ -1,6 +1,6 @@
 import profileReducer, {deletePost} from "./profile-reducer";
 import React from "react";
-import {addPostActionCreater} from "./profile-reducer";
+import {addPostActionCreator} from "./profile-reducer";
 
 let state = {
     postsData: [
@@ -12,7 +12,7 @@ let state = {
 };
 
 test('length of post should be incremented', () => {
-    let action = addPostActionCreater('it-kamasutra');
+    let action = addPostActionCreator('it-kamasutra');
     
     let newState = profileReducer(state,action);
 
