@@ -2,10 +2,8 @@ import React from "react";
 import {connect} from "react-redux";
 import {
     follow,
-    followSuccess, requestUsers,
-    setCurrentPage,
-    toggleFollowingProgress, unfollow,
-    unfollowSuccess
+    requestUsers,
+    unfollow,
 } from "../../redux/users-reducer";
 import Users from "./Users";
 import Preloader from "../common/preloader/Preloader";
@@ -20,19 +18,26 @@ import {
 import {UserType} from "../../types/types";
 import {AppStateType} from "../../redux/redux-store";
 
-type PropsType = {
-    pageTitle: string,
+type MapStatePropsType = {
     currentPage: number,
     pageSize: number,
     isFetching: boolean,
     totalUsersCount: number,
     users: Array<UserType>,
-
-    getUsers: (CurrentPage: number, PageSize: number) => void,
     followingInProgress: Array<number>
-    follow: () => {}
-    unfollow: () => {}
 }
+
+type MapDispatchPropsType = {
+    getUsers: (CurrentPage: number, PageSize: number) => void,
+    follow: (userId: number) => {}
+    unfollow: (userId: number) => {}
+}
+
+type OwnPropsType = {
+    pageTitle: string,
+}
+
+type PropsType = MapStatePropsType & MapDispatchPropsType & OwnPropsType;
 
 class UsersContainer extends React.Component<PropsType> {
 
@@ -63,7 +68,7 @@ class UsersContainer extends React.Component<PropsType> {
     }
 }
 
-let mapStateToProps = (state: AppStateType) => {
+let mapStateToProps = (state: AppStateType): MapStatePropsType => {
     return {
         users: getUsers(state),
         pageSize: getPageSize(state),
@@ -75,13 +80,11 @@ let mapStateToProps = (state: AppStateType) => {
 }
 
 export default compose(
-    connect(mapStateToProps,
+    //<TStateProps = {}, TDispatchProps = {}, TOwnProps = {}, State = DefaultState>
+    connect<MapStatePropsType, MapDispatchPropsType, OwnPropsType, AppStateType>(mapStateToProps,
         {
-            followSuccess,
-            unfollowSuccess,
-            setCurrentPage,
             getUsers: requestUsers,
             follow,
             unfollow,
         }
-))(UsersContainer);
+    ))(UsersContainer);

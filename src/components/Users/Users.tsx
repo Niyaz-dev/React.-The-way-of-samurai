@@ -11,8 +11,8 @@ type PropsType = {
     portionSize?: number
     users: Array<UserType>
     followingInProgress: Array<number>
-    follow: () => {}
-    unfollow: () => {}
+    follow: (userId: number) => void
+    unfollow: (userId: number) => void
 }
 
 let Users: React.FC<PropsType> = ({currentPage, onPageChanged,totalUsersCount,pageSize,users, ...props}) => {

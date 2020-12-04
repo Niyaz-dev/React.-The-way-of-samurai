@@ -54,6 +54,9 @@ class ProfileContainer extends React.Component {
     }
 
     render() {
+        if(!this.props.isAuth) {
+            return <Redirect to={"/login"}/>
+        }
         return (
             <Profile key={this.getUserId()} {...this.props}
                      profile={this.props.profile}
