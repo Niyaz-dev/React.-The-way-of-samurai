@@ -1,10 +1,5 @@
 import React from 'react';
-import MyPosts from './MyPosts/MyPosts';
-import s from './Profile.module.css'
-import ProfileInfo from './ProfileInfo/ProfileInfo';
-import MyPostsContainer from "./MyPosts/MyPostsContainer";
 import Profile from "./Profile";
-import * as axios from "axios";
 import {connect} from "react-redux";
 import {
     clearProfile,
@@ -12,12 +7,11 @@ import {
     getUserProfile,
     savePhoto,
     saveProfile,
-    setStatus,
     updateStatus
 } from "../../redux/profile-reducer";
-import {Redirect, withRouter} from "react-router-dom";
-import {withAuthRedirect} from "../../hoc/WithAuthRedirect";
+import {withRouter} from "react-router-dom";
 import {compose} from "redux";
+import {withAuthRedirect} from "../../hoc/WithAuthRedirect";
 
 
 class ProfileContainer extends React.Component {
@@ -54,9 +48,9 @@ class ProfileContainer extends React.Component {
     }
 
     render() {
-        if(!this.props.isAuth) {
-            return <Redirect to={"/login"}/>
-        }
+        // if(!this.props.isAuth) {
+        //     return <Redirect to={"/login"}/>
+        // }
         return (
             <Profile key={this.getUserId()} {...this.props}
                      profile={this.props.profile}
@@ -78,5 +72,5 @@ let mapStateToProps = (state) => ({
 export default compose(
     connect(mapStateToProps, {getUserProfile, getStatus, updateStatus, clearProfile, savePhoto, saveProfile}),
     withRouter,
-    // withAuthRedirect
+    withAuthRedirect
 )(ProfileContainer);

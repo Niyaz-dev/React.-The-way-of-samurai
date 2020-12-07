@@ -59,7 +59,6 @@ export type LoginFormValuesType = {
     captcha: string;
     email: string;
 }
-
 type LoginFormValuesTypeKeys = Extract<keyof LoginFormValuesType, string>;
 
 const Login: React.FC<MapStatePropsType & MapDispatchPropsType> = (props) => {

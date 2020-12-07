@@ -1,6 +1,6 @@
-import profileReducer, {deletePost} from "./profile-reducer";
+import profileReducer, {actions} from "./profile-reducer";
 import React from "react";
-import {addPostActionCreator} from "./profile-reducer";
+import {ProfileType} from "../types/types";
 
 let state = {
     postsData: [
@@ -9,10 +9,13 @@ let state = {
         {id: 3, message: "asdfg", likesCount: 23},
         {id: 4, message: "dghd", likesCount: 23},
     ],
+    profile: null,
+    status: "",
+    newPostText: "",
 };
 
 test('length of post should be incremented', () => {
-    let action = addPostActionCreator('it-kamasutra');
+    let action = actions.addPostActionCreator('it-kamasutra');
     
     let newState = profileReducer(state,action);
 
@@ -20,7 +23,7 @@ test('length of post should be incremented', () => {
 });
 
 test('after deleting length', () => {
-    let action = deletePost(1);
+    let action = actions.deletePost(1);
     
     let newState = profileReducer(state,action);
 

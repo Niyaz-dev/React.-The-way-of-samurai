@@ -1,10 +1,12 @@
 import React from 'react';
 import s from './Music.module.css'
 
-const Music = () => {
-    return (
-        <div>Music</div>
-    );
+class Music extends React.Component {
+    render() {
+        return (
+            <div>Music</div>
+        );
+    }
 }
 
 export default Music;
