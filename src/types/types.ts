@@ -4,8 +4,8 @@ export type PostType = {
     likesCount: number
 };
 export type PhotosType = {
-    small: string
-    large: string
+    small: string | null 
+    large: string | null
 };
 export type ContactsType = {
     github: string
@@ -24,10 +24,12 @@ export type ProfileType = {
     fullName: string
     contacts: ContactsType
     photos: PhotosType
+    aboutMe: string
 };
 export type UserType = {
     id: number
     name: string
     status: string
     photos: PhotosType
+    followed: boolean
 };
