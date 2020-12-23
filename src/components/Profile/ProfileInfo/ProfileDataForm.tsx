@@ -4,7 +4,7 @@ import {createField, GetStringKeys, Input, Textarea} from "../../common/FormsCon
 import {InjectedFormProps, reduxForm} from "redux-form";
 import style from "../../common/FormsControls/FormsControls.module.css";
 import {ProfileType} from "../../../types/types";
-import {LoginFormValuesType} from "../../Login/Login";
+import {LoginFormValuesType} from "../../Login/LoginPage";
 
 type PropsType = {
     profile: ProfileType

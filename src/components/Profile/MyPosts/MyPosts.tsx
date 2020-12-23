@@ -4,7 +4,7 @@ import Post from './Post/Post';
 import {Field, InjectedFormProps, reduxForm} from "redux-form";
 import {maxLengthCreator, required} from "../../../utils/validators/validators";
 import {createField, GetStringKeys, Input, Textarea} from "../../common/FormsControls/FormsControls";
-import {LoginFormValuesType} from "../../Login/Login";
+import {LoginFormValuesType} from "../../Login/LoginPage";
 import {PostType, ProfileType} from "../../../types/types";
 
 const maxLength = maxLengthCreator(10);

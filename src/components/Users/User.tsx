@@ -7,12 +7,14 @@ import {UserType} from "../../types/types";
 type PropsType = {
     user: UserType
     followingInProgress: Array<number>
-    follow: (userId: number) => {}
-    unfollow: (userId: number) => {}
+    follow: (userId: number) => void
+    unfollow: (userId: number) => void
 }
 
 
-let Users:React.FC<PropsType> = ({user, followingInProgress,follow,unfollow}) => {
+const User:React.FC<PropsType> = ({user, followingInProgress,follow,unfollow}) => {
+    
+    
     return <div>
                     <span>
                         <div>
@@ -43,4 +45,4 @@ let Users:React.FC<PropsType> = ({user, followingInProgress,follow,unfollow}) =>
                 </div>
 }
 
-export default Users;
+export default User;
