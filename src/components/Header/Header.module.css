@@ -3,6 +3,11 @@
     background-color: green;
 }
 
+.header__userLogin {
+    color: white;
+    margin-right: 10px;
+}
+
 .header img {
     width: 20px;
     /* min-width: 100%; */
